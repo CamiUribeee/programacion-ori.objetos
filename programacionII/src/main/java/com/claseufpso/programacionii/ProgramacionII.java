@@ -3,6 +3,7 @@
  */
 
 package com.claseufpso.programacionii;
+import people.Character;
 
 /**
  *
@@ -14,34 +15,16 @@ public class ProgramacionII {
         Character homero = new Character("homero", 39, 'm', "hola" );
         homero.saySomething();
 
-        Character bart = new Character ()
-    }
-    static class Character {
-        String name;
-        int age;
-        char gender; 
-        String phrase;
-
-        public Character(String name, int age, char gender) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            
-        }
-
-        public Character(String name, int age, char gender, String phrase) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.phrase = phrase;
-        }
+        Character bart = new Character("bart", 10, ',', "hola" );
+        bart.saySomething();
         
+        Character apu = new Character();
+        apu.setName("apu");
+        apu.setName("vuelvas prontos");
     }
     
-    void saySomething (){
-        System.out.println();
-        
-    }
+
+    
     
     
     
